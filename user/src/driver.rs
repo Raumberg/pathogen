@@ -22,7 +22,7 @@ pub mod driver {
         pub const READ: ULONG = CTL_CODE(FILE_DEVICE_UNKNOWN, 0x697, METHOD_BUFFERED, FILE_SPECIAL_ACCESS);
         pub const WRITE: ULONG = CTL_CODE(FILE_DEVICE_UNKNOWN, 0x698, METHOD_BUFFERED, FILE_SPECIAL_ACCESS);
     }
-    [#no_mangle]
+    #[no_mangle]
     pub unsafe extern "C" fn CTL_CODE () {
         // TODO:
         // no need?
