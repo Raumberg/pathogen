@@ -27,8 +27,9 @@ I'm fairly bad at C programming (as of now), so consider this as a frankenstein 
 
 ### So, how to build it?..
 1. Install [Windows 10 SDK (10.0.26100.0)](https://developer.microsoft.com/ru-ru/windows/downloads/windows-sdk/) and [Windows Driver Kit](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk).
-2. Install [Visual Studio](https://visualstudio.microsoft.com/ru/) in order to use Microsoft's "cl" compilator.
-3. Ensure the installation of libraries is correct by observing the base path (C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0). km/ and um/ folders need to be present.
+2. Install [Visual Studio](https://visualstudio.microsoft.com/ru/) in order to use Microsoft's "cl" compiler.
+3. Ensure the installation of libraries is correct by observing the base path (C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0).  
+km/ and um/ folders need to be present.
 4. If you are using VSCode, consider adding installed libs to path (see .vscode config in repo or do it manually).
 5. Open the Native Tools Command Prompt for VS and navigate to the project's folder.
 6. Use the command in Makefile to build the driver.
